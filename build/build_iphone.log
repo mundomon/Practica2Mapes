@@ -1,0 +1,282 @@
+
+3/12/2017, 2:13:59 PM
+
+Operating System
+  Name                        = Mac OS X
+  Version                     = 10.12.3
+  Architecture                = 64bit
+  # CPUs                      = 4
+  Memory                      = 4294967296
+
+Node.js
+  Node.js Version             = 4.6.0
+  npm Version                 = 2.15.9
+
+Titanium CLI
+  CLI Version                 = 5.0.11
+
+Titanium SDK
+  SDK Version                 = 6.0.1.GA
+  SDK Path                    = /Users/dedam/Library/Application Support/Titanium/mobilesdk/osx/6.0.1.GA
+  Target Platform             = iphone
+
+Command
+  /usr/local/bin/node /Users/dedam/.appcelerator/install/6.1.0/package/node_modules/titanium/lib/titanium.js build run --platform ios --log-level trace --sdk 6.0.1.GA --project-dir /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes --target simulator --ios-version 10.2 --device-family universal --deploy-type development --sim-type iphone --sim-version 10.2 --device-id BAFEFC29-B897-4119-A8A4-93DBECFFF72A --skip-js-minify --no-colors --no-progress-bars --no-prompt --prompt-type socket-bundle --prompt-port 51845 --config-file /var/folders/ny/88xmw3fd2mnc8ph1wbs1s7rw0000gn/T/build-1489324436618.json --no-banner --project-dir /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes
+
+[TRACE]  [ioslib] Validating iOS Simulator UDID BAFEFC29-B897-4119-A8A4-93DBECFFF72A
+[TRACE]  [ioslib] Found iOS Simulator UDID BAFEFC29-B897-4119-A8A4-93DBECFFF72A
+[TRACE]  [ioslib] Selected iOS Simulator: iPhone 7
+[TRACE]  [ioslib]   UDID    = BAFEFC29-B897-4119-A8A4-93DBECFFF72A
+[TRACE]  [ioslib]   iOS     = 10.2
+[TRACE]  [ioslib] Autoselected Xcode: 8.2.1
+[DEBUG]  Detecting modules in /Users/dedam/Library/Application Support/Titanium/modules
+[DEBUG]  Detected android module: facebook 6.0.1 @ /Users/dedam/Library/Application Support/Titanium/modules/android/facebook/6.0.1
+[DEBUG]  Detected android module: hyperloop 1.2.8 @ /Users/dedam/Library/Application Support/Titanium/modules/android/hyperloop/1.2.8
+[DEBUG]  Detected android module: hyperloop 2.0.0 @ /Users/dedam/Library/Application Support/Titanium/modules/android/hyperloop/2.0.0
+[DEBUG]  Detected android module: ti.cloudpush 4.0.3 @ /Users/dedam/Library/Application Support/Titanium/modules/android/ti.cloudpush/4.0.3
+[DEBUG]  Detected android module: ti.map 3.0.1 @ /Users/dedam/Library/Application Support/Titanium/modules/android/ti.map/3.0.1
+[DEBUG]  Detected android module: ti.touchid 2.0.1 @ /Users/dedam/Library/Application Support/Titanium/modules/android/ti.touchid/2.0.1
+[DEBUG]  Detected commonjs module: ti.cloud 3.2.11 @ /Users/dedam/Library/Application Support/Titanium/modules/commonjs/ti.cloud/3.2.11
+[DEBUG]  Detected iphone module: com.appcelerator.urlSession 2.0.0 @ /Users/dedam/Library/Application Support/Titanium/modules/iphone/com.appcelerator.urlSession/2.0.0
+[DEBUG]  Detected iphone module: facebook 5.2.9 @ /Users/dedam/Library/Application Support/Titanium/modules/iphone/facebook/5.2.9
+[DEBUG]  Detected iphone module: hyperloop 1.2.8 @ /Users/dedam/Library/Application Support/Titanium/modules/iphone/hyperloop/1.2.8
+[DEBUG]  Detected iphone module: hyperloop 2.0.0 @ /Users/dedam/Library/Application Support/Titanium/modules/iphone/hyperloop/2.0.0
+[DEBUG]  Detected iphone module: ti.coremotion 2.0.0 @ /Users/dedam/Library/Application Support/Titanium/modules/iphone/ti.coremotion/2.0.0
+[DEBUG]  Detected iphone module: ti.map 2.8.0 @ /Users/dedam/Library/Application Support/Titanium/modules/iphone/ti.map/2.8.0
+[DEBUG]  Detected iphone module: ti.safaridialog 1.1.1 @ /Users/dedam/Library/Application Support/Titanium/modules/iphone/ti.safaridialog/1.1.1
+[DEBUG]  Detected iphone module: ti.touchid 1.2.2 @ /Users/dedam/Library/Application Support/Titanium/modules/iphone/ti.touchid/1.2.2
+[DEBUG]  Looking for Titanium module id=ti.map version=latest platform=iphone deploy-type=development
+[INFO]   Found Titanium module id=ti.map version=2.8.0 platform=iphone deploy-type=development path=/Users/dedam/Library/Application Support/Titanium/modules/iphone/ti.map/2.8.0
+[DEBUG]  No project level plugins to load
+[TRACE]  Snapshotting build directory
+[DEBUG]  Checking if log server port 48880 is available
+[DEBUG]  Log server port 48880 is in use, testing if it's the app we're building
+[DEBUG]  The log server port is being used by the app being built, continuing
+[DEBUG]  Titanium SDK iOS directory: /Users/dedam/Library/Application Support/Titanium/mobilesdk/osx/6.0.1.GA/iphone
+[INFO]   Deploy type: development
+[INFO]   Building for target: simulator
+[INFO]   Building using iOS SDK: 10.2
+[INFO]   Building for iOS Simulator: iPhone 7
+[DEBUG]  UDID: BAFEFC29-B897-4119-A8A4-93DBECFFF72A
+[DEBUG]  Simulator type: iphone
+[DEBUG]  Simulator version: 10.2
+[INFO]   Building for device family: universal
+[DEBUG]  Setting Xcode target to Debug
+[DEBUG]  Setting Xcode build OS to iphonesimulator
+[DEBUG]  Xcode installation: /Applications/Xcode.app/Contents/Developer
+[DEBUG]  iOS WWDR certificate: installed
+[INFO]   Minimum iOS version: 8.0
+[INFO]   Logging enabled on port 48880
+[INFO]   Debugging disabled
+[INFO]   Profiler disabled
+[INFO]   Set to copy files instead of symlinking
+[INFO]   Forcing rebuild: modules hash changed since last build
+[INFO]     Was: d41d8cd98f00b204e9800998ecf8427e
+[INFO]     Now: 4e16b93101e69e91e961bb5062a733e4
+[INFO]   Initializing the build directory
+[TRACE]  offline build file /var/folders/ny/88xmw3fd2mnc8ph1wbs1s7rw0000gn/T/build-4635bc179001d08a6eb679a10250fd4dc7bd541b.json
+[TRACE]  online 1
+[TRACE]  optimizing build, last build was 1428.168 sec ago
+[INFO]   Creating Xcode project
+[TRACE]  Removing pre-compile phase
+[TRACE]  Adding 1 native module library
+[TRACE]  No extensions to add
+[DEBUG]  Writing /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Practica2Mapes.xcodeproj/project.pbxproj
+[INFO]   Creating Entitlements.plist
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Practica2Mapes.entitlements
+[INFO]   Creating Info.plist
+[INFO]   Disabling ATS
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Info.plist
+[INFO]   Creating main.m
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/main.m
+[INFO]   Creating Xcode config files
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/project.xcconfig
+[DEBUG]  Writing /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/module.xcconfig
+[INFO]   Copying Titanium libraries
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/lib/libTiCore.a
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/lib/libtiverify.a
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/lib/libti_ios_debugger.a
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/lib/libti_ios_profiler.a
+[INFO]   Copying Titanium iOS files
+[TRACE]  Skipping Classes/ApplicationRouting.m, it'll be processed later
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Practica2Mapes_Prefix.pch
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Practica2Mapes.xcodeproj/xcshareddata/xcschemes/Practica2Mapes.xcscheme
+[INFO]   Installing default LaunchScreen.storyboard
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/LaunchScreen.storyboard
+[INFO]   Creating debugger and profiler plists
+[DEBUG]  Skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/build/Products/Debug-iphonesimulator/Practica2Mapes.app/debugger.plist
+[DEBUG]  Skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/build/Products/Debug-iphonesimulator/Practica2Mapes.app/profiler.plist
+[INFO]   Analyzing Resources directory
+[INFO]   Analyzing platform files
+[INFO]   Analyzing module files
+[INFO]   Analyzing localized launch images
+[INFO]   Analyzing CommonJS modules
+[INFO]   Creating asset catalog
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/Contents.json
+[INFO]   Creating app icon set
+[TRACE]  Found generated 29x29 app icon: /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/AppIcon.appiconset/appicon-Small.png
+[TRACE]  Found generated 58x58 app icon: /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/AppIcon.appiconset/appicon-Small@2x.png
+[TRACE]  Found generated 87x87 app icon: /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/AppIcon.appiconset/appicon-Small@3x.png
+[TRACE]  Found generated 40x40 app icon: /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/AppIcon.appiconset/appicon-Small-40.png
+[TRACE]  Found generated 80x80 app icon: /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/AppIcon.appiconset/appicon-Small-40@2x.png
+[TRACE]  Found generated 120x120 app icon: /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/AppIcon.appiconset/appicon-Small-40@3x.png
+[TRACE]  Found generated 120x120 app icon: /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/AppIcon.appiconset/appicon-60@2x.png
+[TRACE]  Found generated 180x180 app icon: /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/AppIcon.appiconset/appicon-60@3x.png
+[TRACE]  Found generated 76x76 app icon: /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/AppIcon.appiconset/appicon-76.png
+[TRACE]  Found generated 152x152 app icon: /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/AppIcon.appiconset/appicon-76@2x.png
+[TRACE]  Found generated 167x167 app icon: /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/AppIcon.appiconset/appicon-83.5@2x.png
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/AppIcon.appiconset/Contents.json
+[INFO]   Creating launch logo image set
+[TRACE]  Found generated 320x320 launch logo: /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/LaunchLogo.imageset/LaunchLogo~iphone.png
+[TRACE]  Found generated 374x374 launch logo: /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/LaunchLogo.imageset/LaunchLogo@2x~iphone.png
+[TRACE]  Found generated 621x621 launch logo: /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/LaunchLogo.imageset/LaunchLogo@3x~iphone.png
+[TRACE]  Found generated 384x384 launch logo: /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/LaunchLogo.imageset/LaunchLogo~ipad.png
+[TRACE]  Found generated 1024x1024 launch logo: /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/LaunchLogo.imageset/LaunchLogo@2x~ipad.png
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/LaunchLogo.imageset/Contents.json
+[INFO]   Creating launch image set
+[DEBUG]  Unsupported launch image Resources/iphone/Default.png, skipping
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/LaunchImage.launchimage/Contents.json
+[INFO]   Creating assets image set
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/06b0217fec5929d2409a5d7ac894bb439b52b9ca.imageset/Contents.json
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/0cd21611365a04693ec5e72cd79545815e4b7178.imageset/Contents.json
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/5c53d235cbafc9572cb1905d1789216a71ee70d9.imageset/Contents.json
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/78b83d45f66698e64b9388b9966013ac1c23a156.imageset/Contents.json
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/4a2546a34d768eb3fe20643ba95e5c8b12145fae.imageset/Contents.json
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/f36dc70ba28f35c81d57303729e1cbb4162c2620.imageset/Contents.json
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/6b5b984f16178cfb5226165f98eb12b469c00774.imageset/Contents.json
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/2234ca063707af60fc8af2dbbb8592f0d1149e9f.imageset/Contents.json
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/93bb64c74a035cecc23bc87124ce957fc49d8972.imageset/Contents.json
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/dce9a9d9cdd14a550a16e42db43c6edc7e479cb0.imageset/Contents.json
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/1b4931e2cb2e44e2135b0dc2f26474f93307f259.imageset/Contents.json
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/6c4bcf41057eac3fa82cbbb33ed7e3a444d33d0b.imageset/Contents.json
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/ed9910355116e0d6439a33bc79af49029368908c.imageset/Contents.json
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/99095c00cc0952c7d6a73c5f862160c42982fde9.imageset/Contents.json
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/ec6fd4e3ea6c274d00052a09c5e5d5152b4c3e27.imageset/Contents.json
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/117877bddafecbdd92014f01e660d1c926b59507.imageset/Contents.json
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/dd52731afce8e4ce98f9a40dcc5773115152ed5f.imageset/Contents.json
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/879136ec909d60a09f213576099fb9d2d5eff95c.imageset/Contents.json
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/5636d9ef7cdd3c2032914b0a6f369100b10ca165.imageset/Contents.json
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/7cf7dfde37a79b5546eb878446da1fa3a7a5beb2.imageset/Contents.json
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/4405cc21530b1703b5dc1e10312c3827328cd72e.imageset/Contents.json
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/ab7db2802fe538177e585ac0c975f9cd318b21fe.imageset/Contents.json
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/f58b0d04f3ad524648680e9940fb4e77323cb9bb.imageset/Contents.json
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/cb2e9b637cf08b6cee5c34a9d42ed14216474da9.imageset/Contents.json
+[DEBUG]  Copying resources
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/build/Products/Debug-iphonesimulator/Practica2Mapes.app/assets/images/my-icons-collection/license/license.pdf
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/LaunchImage.launchimage/Default-568h@2x.png
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/LaunchImage.launchimage/Default-667h@2x.png
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/LaunchImage.launchimage/Default-Landscape-736h@3x.png
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/LaunchImage.launchimage/Default-Landscape.png
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/LaunchImage.launchimage/Default-Landscape@2x.png
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/LaunchImage.launchimage/Default-Portrait-736h@3x.png
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/LaunchImage.launchimage/Default-Portrait.png
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/LaunchImage.launchimage/Default-Portrait@2x.png
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/LaunchImage.launchimage/Default@2x.png
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/06b0217fec5929d2409a5d7ac894bb439b52b9ca.imageset/001-people.png
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/0cd21611365a04693ec5e72cd79545815e4b7178.imageset/002-paper.png
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/5c53d235cbafc9572cb1905d1789216a71ee70d9.imageset/1.jpg
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/78b83d45f66698e64b9388b9966013ac1c23a156.imageset/10.jpg
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/4a2546a34d768eb3fe20643ba95e5c8b12145fae.imageset/11.jpg
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/f36dc70ba28f35c81d57303729e1cbb4162c2620.imageset/12.jpg
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/6b5b984f16178cfb5226165f98eb12b469c00774.imageset/13.jpg
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/2234ca063707af60fc8af2dbbb8592f0d1149e9f.imageset/14.jpg
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/93bb64c74a035cecc23bc87124ce957fc49d8972.imageset/15.jpg
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/dce9a9d9cdd14a550a16e42db43c6edc7e479cb0.imageset/16.jpg
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/1b4931e2cb2e44e2135b0dc2f26474f93307f259.imageset/17.jpg
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/6c4bcf41057eac3fa82cbbb33ed7e3a444d33d0b.imageset/18.jpg
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/ed9910355116e0d6439a33bc79af49029368908c.imageset/19.jpg
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/99095c00cc0952c7d6a73c5f862160c42982fde9.imageset/2.jpg
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/ec6fd4e3ea6c274d00052a09c5e5d5152b4c3e27.imageset/20.jpg
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/117877bddafecbdd92014f01e660d1c926b59507.imageset/3.jpg
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/dd52731afce8e4ce98f9a40dcc5773115152ed5f.imageset/4.jpg
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/879136ec909d60a09f213576099fb9d2d5eff95c.imageset/5.jpg
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/5636d9ef7cdd3c2032914b0a6f369100b10ca165.imageset/6.jpg
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/7cf7dfde37a79b5546eb878446da1fa3a7a5beb2.imageset/7.jpg
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/4405cc21530b1703b5dc1e10312c3827328cd72e.imageset/8.jpg
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/ab7db2802fe538177e585ac0c975f9cd318b21fe.imageset/9.jpg
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/f58b0d04f3ad524648680e9940fb4e77323cb9bb.imageset/tab1.png
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/f58b0d04f3ad524648680e9940fb4e77323cb9bb.imageset/tab1@2x.png
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/f58b0d04f3ad524648680e9940fb4e77323cb9bb.imageset/tab1@3x.png
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/cb2e9b637cf08b6cee5c34a9d42ed14216474da9.imageset/tab2.png
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/cb2e9b637cf08b6cee5c34a9d42ed14216474da9.imageset/tab2@2x.png
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/cb2e9b637cf08b6cee5c34a9d42ed14216474da9.imageset/tab2@3x.png
+[DEBUG]  Copying CSS files
+[INFO]   Processing JavaScript files
+[DEBUG]  Overwriting /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/Resources/app.js => /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/build/Products/Debug-iphonesimulator/Practica2Mapes.app/app.js
+[INFO]   Writing app properties
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/build/Products/Debug-iphonesimulator/Practica2Mapes.app/_app_props_.json
+[DEBUG]  Using default application routing
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Classes/ApplicationRouting.m
+[INFO]   Writing i18n files
+[DEBUG]  No i18n files to process
+[INFO]   Processing Titanium symbols
+[DEBUG]  Processing Titanium namespace resources
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/build/Products/Debug-iphonesimulator/Practica2Mapes.app/modules/ui/images/badge.png
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/build/Products/Debug-iphonesimulator/Practica2Mapes.app/modules/ui/images/closeButton.png
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/build/Products/Debug-iphonesimulator/Practica2Mapes.app/modules/ui/images/photoDefault.png
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Classes/defines.h
+[INFO]   Removing files
+[DEBUG]  Removing empty directories
+[INFO]   Invoking xcodebuild
+[DEBUG]  Invoking: DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild build -target Practica2Mapes -configuration Debug -scheme Practica2Mapes -derivedDataPath /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/DerivedData OBJROOT=/Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/build/Intermediates SHARED_PRECOMPS_DIR=/Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/build/Intermediates/PrecompiledHeaders SYMROOT=/Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/build/Products -destination "platform=iOS Simulator,id=BAFEFC29-B897-4119-A8A4-93DBECFFF72A,OS=10.2" ONLY_ACTIVE_ARCH=1
+[TRACE]  User defaults from command line:
+[TRACE]      IDEDerivedDataPathOverride = /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/DerivedData
+[TRACE]  Build settings from command line:
+[TRACE]      OBJROOT = /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/build/Intermediates
+[TRACE]      ONLY_ACTIVE_ARCH = 1
+[TRACE]      SHARED_PRECOMPS_DIR = /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/build/Intermediates/PrecompiledHeaders
+[TRACE]      SYMROOT = /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/build/Products
+[TRACE]  
+[TRACE]  === BUILD TARGET Practica2Mapes OF PROJECT Practica2Mapes WITH CONFIGURATION Debug ===
+[TRACE]  Check dependencies
+[TRACE]  
+[TRACE]  Ld build/Products/Debug-iphonesimulator/Practica2Mapes.app/Practica2Mapes normal x86_64
+[TRACE]      cd /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone
+[TRACE]      export IPHONEOS_DEPLOYMENT_TARGET=8.0
+[TRACE]      export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
+[TRACE]      /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.2.sdk -L/Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/build/Products/Debug-iphonesimulator -L/Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/lib -L/Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Classes/APSAnalytics -L/Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Classes/APSHTTPClient -L/Users/dedam/Library/Application\ Support/Titanium/modules/iphone/ti.map/2.8.0 -F/Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/build/Products/Debug-iphonesimulator -filelist /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/build/Intermediates/Practica2Mapes.build/Debug-iphonesimulator/Practica2Mapes.build/Objects-normal/x86_64/Practica2Mapes.LinkFileList -mios-simulator-version-min=8.0 -dead_strip -Xlinker -object_path_lto -Xlinker /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/build/Intermediates/Practica2Mapes.build/Debug-iphonesimulator/Practica2Mapes.build/Objects-normal/x86_64/Practica2Mapes_lto.o -Xlinker -no_deduplicate -Xlinker -objc_abi_version -Xlinker 2 -fobjc-link-runtime -stdlib=libc++ -ObjC -weak_framework MapKit -weak_framework MapKit -weak-lti_ios_profiler -weak-lti_ios_debugger -weak-lTiCore -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __entitlements -Xlinker /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/build/Intermediates/Practica2Mapes.build/Debug-iphonesimulator/Practica2Mapes.build/Practica2Mapes.app.xcent -weak_framework iAd -framework CoreMedia -weak_framework CoreMotion -lAPSAnalytics -weak_framework CoreText -framework EventKit -framework EventKitUI -weak_framework Security -licucore -framework Foundation -weak_framework UIKit -framework CoreGraphics -weak_framework AddressBook -framework AddressBookUI -framework CFNetwork -framework CoreLocation -weak_framework MapKit -framework MessageUI -framework MobileCoreServices -framework OpenGLES -framework QuartzCore -framework SystemConfiguration -lsqlite3 -lz -framework AudioToolbox -weak_framework MediaPlayer -framework AVFoundation -lxml2 -framework StoreKit -lAPSHTTPClient -framework ExternalAccessory -ltiverify -lti.map -Xlinker -dependency_info -Xlinker /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/build/Intermediates/Practica2Mapes.build/Debug-iphonesimulator/Practica2Mapes.build/Objects-normal/x86_64/Practica2Mapes_dependency_info.dat -o /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/build/Products/Debug-iphonesimulator/Practica2Mapes.app/Practica2Mapes
+[TRACE]  
+[TRACE]  GenerateDSYMFile build/Products/Debug-iphonesimulator/Practica2Mapes.app.dSYM build/Products/Debug-iphonesimulator/Practica2Mapes.app/Practica2Mapes
+[TRACE]      cd /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone
+[TRACE]      export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
+[TRACE]      /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/build/Products/Debug-iphonesimulator/Practica2Mapes.app/Practica2Mapes -o /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/build/Products/Debug-iphonesimulator/Practica2Mapes.app.dSYM
+[TRACE]  
+[TRACE]  CopySwiftLibs build/Products/Debug-iphonesimulator/Practica2Mapes.app
+[TRACE]      cd /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone
+[TRACE]      export CODESIGN_ALLOCATE=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/codesign_allocate
+[TRACE]      export DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer
+[TRACE]      export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
+[TRACE]      export SDKROOT=/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.2.sdk
+[TRACE]      builtin-swiftStdLibTool --copy --verbose --sign - --scan-executable /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/build/Products/Debug-iphonesimulator/Practica2Mapes.app/Practica2Mapes --scan-folder /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/build/Products/Debug-iphonesimulator/Practica2Mapes.app/Frameworks --scan-folder /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/build/Products/Debug-iphonesimulator/Practica2Mapes.app/PlugIns --scan-folder /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.2.sdk/System/Library/Frameworks/iAd.framework --scan-folder /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.2.sdk/System/Library/Frameworks/CoreMedia.framework --scan-folder /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.2.sdk/System/Library/Frameworks/CoreMotion.framework --scan-folder /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.2.sdk/System/Library/Frameworks/CoreText.framework --scan-folder /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.2.sdk/System/Library/Frameworks/EventKit.framework --scan-folder /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.2.sdk/System/Library/Frameworks/EventKitUI.framework --scan-folder /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.2.sdk/System/Library/Frameworks/Security.framework --scan-folder /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.2.sdk/System/Library/Frameworks/Foundation.framework --scan-folder /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.2.sdk/System/Library/Frameworks/UIKit.framework --scan-folder /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.2.sdk/System/Library/Frameworks/CoreGraphics.framework --scan-folder /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.2.sdk/System/Library/Frameworks/AddressBook.framework --scan-folder /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.2.sdk/System/Library/Frameworks/AddressBookUI.framework --scan-folder /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.2.sdk/System/Library/Frameworks/CFNetwork.framework --scan-folder /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.2.sdk/System/Library/Frameworks/CoreLocation.framework --scan-folder /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.2.sdk/System/Library/Frameworks/MapKit.framework --scan-folder /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.2.sdk/System/Library/Frameworks/MessageUI.framework --scan-folder /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.2.sdk/System/Library/Frameworks/MobileCoreServices.framework --scan-folder /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.2.sdk/System/Library/Frameworks/OpenGLES.framework --scan-folder /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.2.sdk/System/Library/Frameworks/QuartzCore.framework --scan-folder /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.2.sdk/System/Library/Frameworks/SystemConfiguration.framework --scan-folder /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.2.sdk/System/Library/Frameworks/AudioToolbox.framework --scan-folder /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.2.sdk/System/Library/Frameworks/MediaPlayer.framework --scan-folder /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.2.sdk/System/Library/Frameworks/AVFoundation.framework --scan-folder /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.2.sdk/System/Library/Frameworks/StoreKit.framework --scan-folder /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.2.sdk/System/Library/Frameworks/ExternalAccessory.framework --platform iphonesimulator --toolchain /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --toolchain /Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain --toolchain /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --destination /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/build/Products/Debug-iphonesimulator/Practica2Mapes.app/Frameworks --strip-bitcode --resource-destination /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/build/Products/Debug-iphonesimulator/Practica2Mapes.app --resource-library libswiftRemoteMirror.dylib
+[TRACE]  Exiting early, found no Swift version in executables.
+[TRACE]  
+[TRACE]  Touch build/Products/Debug-iphonesimulator/Practica2Mapes.app
+[TRACE]      cd /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone
+[TRACE]      export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
+[TRACE]      /usr/bin/touch -c /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/build/Products/Debug-iphonesimulator/Practica2Mapes.app
+[TRACE]  
+[TRACE]  CodeSign build/Products/Debug-iphonesimulator/Practica2Mapes.app
+[TRACE]      cd /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone
+[TRACE]      export CODESIGN_ALLOCATE=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/codesign_allocate
+[TRACE]      export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
+[TRACE]      
+[TRACE]  Signing Identity:     "-"
+[TRACE]      /usr/bin/codesign --force --sign - --timestamp=none /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/build/Products/Debug-iphonesimulator/Practica2Mapes.app
+[TRACE]  
+[TRACE]  ** BUILD SUCCEEDED **
+[INFO]   Finished building the application in 11s 773ms
+[INFO]   Launching iOS Simulator
+[TRACE]  [ioslib] Selected iOS Simulator: iPhone 7
+[TRACE]  [ioslib]   UDID    = BAFEFC29-B897-4119-A8A4-93DBECFFF72A
+[TRACE]  [ioslib]   iOS     = 10.2
+[TRACE]  [ioslib] Autoselected Xcode: 8.2.1
+[TRACE]  [ioslib] Checking if simulator /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app/Contents/MacOS/Simulator is already running
+[TRACE]  [ioslib] Simulator is running (pid 51411)
+[TRACE]  [ioslib] Simulator is booted!
+[TRACE]  [ioslib] iPhone 7 Simulator already running with the correct udid
+[TRACE]  [ioslib] Tailing iPhone 7 Simulator system log: /Users/dedam/Library/Logs/CoreSimulator/BAFEFC29-B897-4119-A8A4-93DBECFFF72A/system.log
+[TRACE]  [ioslib] Running: osascript "/Users/dedam/Library/Application Support/Titanium/mobilesdk/osx/6.0.1.GA/node_modules/ioslib/lib/sim_focus.scpt" "Simulator"
+[TRACE]  [ioslib] iPhone 7 Simulator successfully focused
+[TRACE]  [ioslib] Installing the app
+[TRACE]  [ioslib] App launched
+[TRACE]  [ioslib] Trying to connect to log server port 48880...

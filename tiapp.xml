@@ -5,7 +5,7 @@
     <version>1.0</version>
     <publisher>dedam</publisher>
     <url/>
-    <description/>
+    <description>undefined</description>
     <copyright>2017 by dedam</copyright>
     <icon>appicon.png</icon>
     <fullscreen>false</fullscreen>
@@ -19,6 +19,8 @@
         <use-app-thinning>true</use-app-thinning>
         <plist>
             <dict>
+                <key>NSLocationWhenInUseUsageDescription</key>
+                <string>La aplicación necesita acceder al GPS</string>
                 <key>UISupportedInterfaceOrientations~iphone</key>
                 <array>
                     <string>UIInterfaceOrientationPortrait</string>
@@ -50,7 +52,10 @@
         </splash>
         <theme>default</theme>
     </mobileweb>
-    <modules/>
+    <modules>
+    	<module platform="iphone">ti.map</module>
+    	<module platform="android">ti.map</module>
+    </modules>
     <deployment-targets>
         <target device="android">true</target>
         <target device="ipad">true</target>
