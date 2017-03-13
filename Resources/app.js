@@ -1,22 +1,16 @@
 var point1, point2;
 
-
+/*OBSOLETAS*/
+/*
 function getCurrentPosition() {
 	
 	if (Ti.Geolocation.locationServicesEnabled) {
 	    Ti.Geolocation.getCurrentPosition(function(e) {
 	        if (e.error) { Ti.API.error('Error: ' + e.error); }
-	        else { Ti.API.info(e.coords); }
+	        else { Ti.API.info('lat:'+e.coords.latitude+' long:'+e.coords.longitude);
+	        	}
 	    });
 	} else { alert('Please enable location services'); }
-}
-
-function onMapComplete() {
-	
-	getCurrentPosition();
-	setDefaultAnnotations();
-	setDefaultLine();
-	setDefaultRoute();
 }
 
 function setDefaultAnnotations() {
@@ -110,7 +104,57 @@ function setDefaultRoute() {
 	xhr.send();
 }
 
+ */
 
+
+function setDefaultAccuracy(){
+	
+	if (Ti.Geolocation.locationServicesEnabled) {
+		Ti.Geolocation.purpose = 'Get Current Location';
+		Ti.Geolocation.accuracy = Ti.Geolocation.ACCURACY_BEST;
+		Ti.Geolocation.distanceFilter = 10;
+		Ti.Geolocation.preferredProvider = Ti.Geolocation.PROVIDER_GPS;
+		/*
+		Ti.Geolocation.addEventListener('location', function(e) {
+			if (e.error) { alert('Error: ' + e.error); }
+			else { Ti.API.info(e.coords); }
+		});
+		*/  
+	} else { alert('Please enable location services'); }
+	
+}
+
+
+
+function setMapPosition() {
+	
+	if (Ti.Geolocation.locationServicesEnabled) {
+	    Ti.Geolocation.getCurrentPosition(function(e) {
+	        if (e.error) { Ti.API.error('Error: ' + e.error); }
+	        else { 
+	        	Ti.API.info(e.coords);
+	        	var region={latitude:37.7261475};
+	        	mapview.setRegion(region);
+	        	//mapview.setLocation({latitude:e.coords.latitude,longitude:e.coords.longitude,latitudeDelta:1,longitudeDelta:1,animate:true,});
+	        	mapview.setLocation({latitude: 41.7261475, longitude: 1.6430278,latitudeDelta:1,longitudeDelta:1,animate:true,});
+	        	}
+	    });
+	} else { alert('Please enable location services'); }
+}
+
+function onMapComplete() {
+	
+	setDefaultAccuracy();
+	getSetPositionButton();
+//	getCurrentPosition();
+//	getInitialMapPosition();
+//	setDefaultAnnotations();
+//	setDefaultLine();
+//	setDefaultRoute();
+}
+
+
+////// INICIO VENTANA
 
 var win = Ti.UI.createWindow({});
 
@@ -119,22 +163,54 @@ win.open();
 
 
 
-// mapa
+// MAPA
 
 var Map = require('ti.map');
 
 var mapview = Map.createView({
     mapType: Map.NORMAL_TYPE,
     region: {
-    	latitude: 41.392006, longitude: 2.174209,
-        latitudeDelta: 0.1, longitudeDelta: 0.1 
+    	latitude: 41.7261475, longitude: 1.6430278,
+        latitudeDelta: 8, longitudeDelta: 8, zoom:8
+        
     },
     animate: true,
     regionFit: true,
-    userLocation: true,
+    userLocation: false,
     //annotations: [point1, point2]
 });
 mapview.addEventListener('complete', function() {
 	onMapComplete();
 });
 win.add(mapview);
+
+
+
+//BOTON
+function getSetPositionButton(){
+	var button = Ti.UI.createView({
+		backgroundColor:'brown',
+		backgroundImage:'/assets/images/my-icons-collection/png/001-map.png',
+		title:'Hola',
+		width:50,
+		height:50,
+		bottom: 5,
+		borderRadius:25,
+	});
+	
+		
+	button.addEventListener('click',function(){
+		console.log('boton pulsado');
+		setMapPosition();
+		/*view.animate({
+			duration:1000,
+			left: 300,
+			autoreverse: true,
+		},function(){
+			alert('acabe');
+		});*/
+	});
+		
+	win.add(button);	
+}
+

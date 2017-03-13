@@ -3330,15 +3330,30 @@
 			"mtime": "2017-03-10T12:30:58.000Z",
 			"size": 306760
 		},
+		"assets/images/my-icons-collection/png/001-map.png": {
+			"hash": "7a340d6599756983488d8d6b21cf6ae5",
+			"mtime": "2017-03-13T01:04:06.000Z",
+			"size": 972
+		},
 		"assets/images/my-icons-collection/png/001-people.png": {
 			"hash": "b86af0b73a23e63845d28aefacc0f7fc",
 			"mtime": "2017-03-12T12:52:40.000Z",
 			"size": 2580
 		},
+		"assets/images/my-icons-collection/png/002-location.png": {
+			"hash": "480b001d160eaa2947d86cbe768e40be",
+			"mtime": "2017-03-13T01:04:06.000Z",
+			"size": 1774
+		},
 		"assets/images/my-icons-collection/png/002-paper.png": {
 			"hash": "9f8153afac86da900554232bd6e2038d",
 			"mtime": "2017-03-12T12:52:40.000Z",
 			"size": 2161
+		},
+		"assets/images/my-icons-collection/png/gps.png": {
+			"hash": "b4d07d04546d226ac23a4cf3b6d5b86d",
+			"mtime": "2017-03-13T01:12:45.000Z",
+			"size": 597
 		},
 		"assets/images/nice_towns/1.jpg": {
 			"hash": "5a10d354a143d7270485e77df810f471",
