@@ -1,5 +1,6 @@
 var point1, point2;
-
+var showTown=false;
+var mapLoaded=false;
 /*OBSOLETAS*/
 /*
 function getCurrentPosition() {
@@ -124,8 +125,6 @@ function setDefaultAccuracy(){
 	
 }
 
-
-
 function setMapPosition() {
 	
 	if (Ti.Geolocation.locationServicesEnabled) {
@@ -142,12 +141,47 @@ function setMapPosition() {
 	} else { alert('Please enable location services'); }
 }
 
-function onMapComplete() {
+function show_nice_towns(){
+	if(showTown){
+		var nice_town_data = require('data/nice_town_data').data;
+		//crear anotacion
+		for (var i=0;i<nice_town_data.length;i++){
+			var point = Map.createAnnotation({
+				title: nice_town_data[i].name,
+				latitude: nice_town_data[i].latitude, 
+		    	longitude: nice_town_data[i].longitude,
+				pincolor: Map.ANNOTATION_RED,
+				
+			});
+			var bubbleView= Ti.UI.createView({
+				width:45,
+				height:45
+			});
+			bubbleView.add( Ti.UI.createImageView({
+			    image:'/assets/images/nice_towns/'+nice_town_data[i].id+'.jpg',
+				width: 45,
+				height: 45
+			  }));
+			
+			point.setLeftView(bubbleView);
+			mapview.addAnnotation(point);
+		}
+		showTown=false;
+	}
+	else{
+		mapview.removeAllAnnotations();
+		showTown=true;
+	}
+	//PUEBLOS BONITOS
 	
+}
+
+function onMapComplete() {
+	mapLoaded=true;
 	setDefaultAccuracy();
-	getSetPositionButton();
+
+//	show_nice_towns();
 //	getCurrentPosition();
-//	getInitialMapPosition();
 //	setDefaultAnnotations();
 //	setDefaultLine();
 //	setDefaultRoute();
@@ -184,33 +218,52 @@ mapview.addEventListener('complete', function() {
 });
 win.add(mapview);
 
+//PIE PAGINA
+var footer = Ti.UI.createView({
+	height:50,
+	bottom:0,
+	layout:'horizontal'
+});
+win.add(footer);
 
+getSetPositionButton();
+getShowTownsButton();
 
-//BOTON
+//BOTONES
 function getSetPositionButton(){
 	var button = Ti.UI.createView({
 		backgroundColor:'brown',
 		backgroundImage:'/assets/images/my-icons-collection/png/001-map.png',
-		title:'Hola',
 		width:50,
 		height:50,
-		bottom: 5,
 		borderRadius:25,
 	});
 	
 		
 	button.addEventListener('click',function(){
-		console.log('boton pulsado');
-		setMapPosition();
-		/*view.animate({
-			duration:1000,
-			left: 300,
-			autoreverse: true,
-		},function(){
-			alert('acabe');
-		});*/
+		if(mapLoaded){setMapPosition();}
 	});
 		
-	win.add(button);	
+	footer.add(button);	
 }
+
+function getShowTownsButton(){
+	var button = Ti.UI.createView({
+		backgroundColor:'black',
+		backgroundImage:'/assets/images/my-icons-collection/png/001-people.png',
+		width:50,
+		height:50,
+		borderRadius:25,
+	});
+	
+		
+	button.addEventListener('click',function(){
+		if(mapLoaded){show_nice_towns();}
+	});
+		
+	footer.add(button);	
+}
+
+
+
 

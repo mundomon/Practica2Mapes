@@ -1,5 +1,5 @@
 
-3/13/2017, 2:20:25 AM
+3/13/2017, 5:39:25 PM
 
 Operating System
   Name                        = Mac OS X
@@ -21,7 +21,7 @@ Titanium SDK
   Target Platform             = iphone
 
 Command
-  /usr/local/bin/node /Users/dedam/.appcelerator/install/6.1.0/package/node_modules/titanium/lib/titanium.js build run --platform ios --log-level trace --sdk 6.0.1.GA --project-dir /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes --target simulator --ios-version 10.2 --device-family universal --deploy-type development --sim-type iphone --sim-version 10.2 --device-id BAFEFC29-B897-4119-A8A4-93DBECFFF72A --skip-js-minify --no-colors --no-progress-bars --no-prompt --prompt-type socket-bundle --prompt-port 51845 --config-file /var/folders/ny/88xmw3fd2mnc8ph1wbs1s7rw0000gn/T/build-1489368022733.json --no-banner --project-dir /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes
+  /usr/local/bin/node /Users/dedam/.appcelerator/install/6.1.0/package/node_modules/titanium/lib/titanium.js build run --platform ios --log-level trace --sdk 6.0.1.GA --project-dir /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes --target simulator --ios-version 10.2 --device-family universal --deploy-type development --sim-type iphone --sim-version 10.2 --device-id BAFEFC29-B897-4119-A8A4-93DBECFFF72A --skip-js-minify --no-colors --no-progress-bars --no-prompt --prompt-type socket-bundle --prompt-port 51845 --config-file /var/folders/ny/88xmw3fd2mnc8ph1wbs1s7rw0000gn/T/build-1489423162626.json --no-banner --project-dir /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes
 
 [TRACE]  [ioslib] Validating iOS Simulator UDID BAFEFC29-B897-4119-A8A4-93DBECFFF72A
 [TRACE]  [ioslib] Found iOS Simulator UDID BAFEFC29-B897-4119-A8A4-93DBECFFF72A
@@ -73,7 +73,7 @@ Command
 [INFO]   Initializing the build directory
 [TRACE]  offline build file /var/folders/ny/88xmw3fd2mnc8ph1wbs1s7rw0000gn/T/build-4635bc179001d08a6eb679a10250fd4dc7bd541b.json
 [TRACE]  online 1
-[TRACE]  optimizing build, last build was 45013.983 sec ago
+[TRACE]  optimizing build, last build was 13709.942 sec ago
 [INFO]   Creating Xcode project
 [TRACE]  Removing pre-compile phase
 [TRACE]  Adding 1 native module library
@@ -206,6 +206,7 @@ Command
 [DEBUG]  Copying CSS files
 [INFO]   Processing JavaScript files
 [DEBUG]  Overwriting /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/Resources/app.js => /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/build/Products/Debug-iphonesimulator/Practica2Mapes.app/app.js
+[DEBUG]  Overwriting /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/Resources/data/nice_town_data.js => /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/build/Products/Debug-iphonesimulator/Practica2Mapes.app/data/nice_town_data.js
 [INFO]   Writing app properties
 [TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/build/Products/Debug-iphonesimulator/Practica2Mapes.app/_app_props_.json
 [DEBUG]  Using default application routing
@@ -221,7 +222,7 @@ Command
 [INFO]   Removing files
 [DEBUG]  Removing empty directories
 [INFO]   Skipping xcodebuild
-[INFO]   Finished building the application in 2s 485ms
+[INFO]   Finished building the application in 2s 512ms
 [INFO]   Launching iOS Simulator
 [TRACE]  [ioslib] Selected iOS Simulator: iPhone 7
 [TRACE]  [ioslib]   UDID    = BAFEFC29-B897-4119-A8A4-93DBECFFF72A

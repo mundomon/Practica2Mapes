@@ -122,11 +122,15 @@
 		</data>
 		<key>app.js</key>
 		<data>
-		Gwz3aMQAAm80M8YI84YYruvh3iw=
+		vPFSxKm+yoa1JFZkxrxqW902Enk=
 		</data>
 		<key>assets/images/my-icons-collection/license/license.pdf</key>
 		<data>
 		9lj1OsqUD8Rl7/S/D+Aoi/jkdAE=
+		</data>
+		<key>data/nice_town_data.js</key>
+		<data>
+		6GIjd7tc6OSf+kKtaf5cjp7RFns=
 		</data>
 		<key>modules/ui/images/badge.png</key>
 		<data>
@@ -444,11 +448,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Gwz3aMQAAm80M8YI84YYruvh3iw=
+			vPFSxKm+yoa1JFZkxrxqW902Enk=
 			</data>
 			<key>hash2</key>
 			<data>
-			v8dB8WPsPfMnegxJrnegjy/H13XIH808ZDvyxY9KtfM=
+			1B7Otv36vnoAxhBnlvuHgdgMtPSbJbUeX9U4Xc5sbu0=
 			</data>
 		</dict>
 		<key>assets/images/my-icons-collection/license/license.pdf</key>
@@ -460,6 +464,17 @@
 			<key>hash2</key>
 			<data>
 			1on40rOq11QzRMHQH51jOOdAOsVctYs5tsm1Xe+/gb4=
+			</data>
+		</dict>
+		<key>data/nice_town_data.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6GIjd7tc6OSf+kKtaf5cjp7RFns=
+			</data>
+			<key>hash2</key>
+			<data>
+			JdPuAqPh307XGy2gl6P4hE8E6YrtSNFB9vLZWTYcFwo=
 			</data>
 		</dict>
 		<key>modules/ui/images/badge.png</key>
