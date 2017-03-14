@@ -58,7 +58,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		NfAjZlZ9LoXvuMqC6IMuGGFymFo=
+		v3QjVgyoT2dhobu3whbb4OhBssc=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -122,11 +122,15 @@
 		</data>
 		<key>app.js</key>
 		<data>
-		vPFSxKm+yoa1JFZkxrxqW902Enk=
+		jSFt7vCFaOkzbRYC4ygnSpWQqfU=
 		</data>
 		<key>assets/images/my-icons-collection/license/license.pdf</key>
 		<data>
 		9lj1OsqUD8Rl7/S/D+Aoi/jkdAE=
+		</data>
+		<key>data/dadesjson.js</key>
+		<data>
+		juhWU0B5EsvZ7Y7VOl76Jg2nCpQ=
 		</data>
 		<key>data/nice_town_data.js</key>
 		<data>
@@ -294,11 +298,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			NfAjZlZ9LoXvuMqC6IMuGGFymFo=
+			v3QjVgyoT2dhobu3whbb4OhBssc=
 			</data>
 			<key>hash2</key>
 			<data>
-			EfGjJHRxJr4H7jUlk8ARLV7SxbnIZSTFOhEfEwusABM=
+			sNfon5gljDHJCObEvmwtJN/EqIeIpuGVhClYbmeglh0=
 			</data>
 		</dict>
 		<key>LaunchImage-700-568h@2x.png</key>
@@ -448,11 +452,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			vPFSxKm+yoa1JFZkxrxqW902Enk=
+			jSFt7vCFaOkzbRYC4ygnSpWQqfU=
 			</data>
 			<key>hash2</key>
 			<data>
-			1B7Otv36vnoAxhBnlvuHgdgMtPSbJbUeX9U4Xc5sbu0=
+			16dWCjv73qRZhguLlyXpRfhSwJrQLFsCHCS81+1jXtc=
 			</data>
 		</dict>
 		<key>assets/images/my-icons-collection/license/license.pdf</key>
@@ -464,6 +468,17 @@
 			<key>hash2</key>
 			<data>
 			1on40rOq11QzRMHQH51jOOdAOsVctYs5tsm1Xe+/gb4=
+			</data>
+		</dict>
+		<key>data/dadesjson.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			juhWU0B5EsvZ7Y7VOl76Jg2nCpQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			OQDpSPGWAAVv6T77le46p9E9H0MT7QuBxZwDy1UrIRY=
 			</data>
 		</dict>
 		<key>data/nice_town_data.js</key>

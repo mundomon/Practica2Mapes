@@ -1,111 +1,11 @@
 var point1, point2;
-var showTown=false;
+var isHiddenTown=true;
+var isHiddenSimbol=true;
+var isHiddenPosition=true;
 var mapLoaded=false;
-/*OBSOLETAS*/
-/*
-function getCurrentPosition() {
-	
-	if (Ti.Geolocation.locationServicesEnabled) {
-	    Ti.Geolocation.getCurrentPosition(function(e) {
-	        if (e.error) { Ti.API.error('Error: ' + e.error); }
-	        else { Ti.API.info('lat:'+e.coords.latitude+' long:'+e.coords.longitude);
-	        	}
-	    });
-	} else { alert('Please enable location services'); }
-}
-
-function setDefaultAnnotations() {
-	
-	// -- La Sagrada Familia
-	point1 = Map.createAnnotation({
-	    latitude: 41.404095, 
-	    longitude: 2.174582,
-	    title:"La Sagrada Familia",
-	    subtitle:'Carrer de la Marina 266-270',
-	    pincolor: Map.ANNOTATION_RED,
-	    myid: 1 // Custom property to uniquely identify this annotation.
-	});
-	mapview.addAnnotation(point1);
-	
-	
-	// -- Zoo de Barcelona
-	point2 = Map.createAnnotation({
-	    latitude: 41.3883324, longitude: 2.1862068,
-	    title: "Zoo de Barcelona",
-	    subtitle: 'Parc de la Ciutadella',
-	    pincolor: Map.ANNOTATION_RED,
-	    myid: 2 // Custom property to uniquely identify this annotation.
-	});
-	mapview.addAnnotation(point2);
-
-}
-
-function setDefaultLine() {
-	
-	var line1 = Map.createRoute({
-	    width: 4,
-	    color: '#f00',
-	    points: [
-	        { latitude: point1.latitude, longitude: point1.longitude },
-	        { latitude: point2.latitude, longitude: point2.longitude },
-	    ]
-	});
-	mapview.addRoute(line1);
-}
-
-function setDefaultRoute() {
-	
-	var url = 
-		"http://maps.googleapis.com/maps/api/directions/json" + 
-		"?origin=" + point1.latitude + "," + point1.longitude + 
-	 	"&destination=" + point2.latitude + "," + point2.longitude + 
-	 	"&sensor=true";
-	 
-	var xhr = Titanium.Network.createHTTPClient();
-	xhr.open('GET', url);
-	Ti.API.info('URL: ' + url);
-	 
-	xhr.onload = function() {
-	    Ti.API.info('inside the xhr-->' + this.responseText);
-	    var xml = this.responseText;
-	    var points = [];
-	 
-	    // Obtenemos todas las posiciones de la ruta
-	    var position =
-	        JSON.parse(this.responseText).routes[0].legs[0].steps;
-	    
-	    if (position[0] != null) {
-	 
-	        points.push({
-	            latitude : position[0].start_location.lat,
-	            longitude : position[0].start_location.lng,
-	        });
-	 
-	      // Here we use the for loop to collect all the steps and push it to the array and use this array to form the route in android.
-	 
-	        for (var i = 0; i < position.length; i++) {
-	 
-		        points.push({
-		            latitude : position[i].end_location.lat,
-		            longitude : position[i].end_location.lng,
-		        });
-		    }
-	    } else {
-	        alert('no route');
-	    }
-	 
-	    var route = Map.createRoute({
-		    width: 4,
-		    color: '#00f',
-		    points: points
-	    });
-	    mapview.addRoute(route);
-	};
-
-	xhr.send();
-}
-
- */
+var climaArray=[];
+var townArray=[];
+var myPositionAnnotation;
 
 
 function setDefaultAccuracy(){
@@ -126,23 +26,38 @@ function setDefaultAccuracy(){
 }
 
 function setMapPosition() {
-	
-	if (Ti.Geolocation.locationServicesEnabled) {
-	    Ti.Geolocation.getCurrentPosition(function(e) {
-	        if (e.error) { Ti.API.error('Error: ' + e.error); }
-	        else { 
-	        	Ti.API.info(e.coords);
-	        	var region={latitude:37.7261475};
-	        	mapview.setRegion(region);
-	        	//mapview.setLocation({latitude:e.coords.latitude,longitude:e.coords.longitude,latitudeDelta:1,longitudeDelta:1,animate:true,});
-	        	mapview.setLocation({latitude: 41.7261475, longitude: 1.6430278,latitudeDelta:1,longitudeDelta:1,animate:true,});
-	        	}
-	    });
-	} else { alert('Please enable location services'); }
+	if(isHiddenPosition){
+		if (Ti.Geolocation.locationServicesEnabled) {
+		    Ti.Geolocation.getCurrentPosition(function(e) {
+		        if (e.error) { Ti.API.error('Error: ' + e.error); }
+		        else { 
+		        	Ti.API.info(e.coords);
+		        	//mapview.setLocation({latitude:e.coords.latitude,longitude:e.coords.longitude,latitudeDelta:1,longitudeDelta:1,animate:true,});
+		        	mapview.setLocation({latitude: 41.7261475, longitude: 1.6430278,latitudeDelta:1,longitudeDelta:1,animate:true,});
+		        	var point = Map.createAnnotation({
+						title: 'Me',
+						latitude: 41.7261475, 
+						longitude: 1.6430278,
+						pincolor: Map.ANNOTATION_RED,
+						image:'/assets/images/my-icons-collection/png/004-people.png',		
+					});
+					mapview.addAnnotation(point);
+					myPositionAnnotation=point;
+		        }
+		    });
+		} else { alert('Please enable location services'); }
+		isHiddenPosition=false;
+	}
+	else{
+		mapview.removeAnnotation(myPositionAnnotation);
+		isHiddenPosition=true;
+	}
+
 }
 
 function show_nice_towns(){
-	if(showTown){
+	//POBLES BONICS
+	if(isHiddenTown){
 		var nice_town_data = require('data/nice_town_data').data;
 		//crear anotacion
 		for (var i=0;i<nice_town_data.length;i++){
@@ -151,6 +66,7 @@ function show_nice_towns(){
 				latitude: nice_town_data[i].latitude, 
 		    	longitude: nice_town_data[i].longitude,
 				pincolor: Map.ANNOTATION_RED,
+				//image:'/assets/images/nice_towns/'+nice_town_data[i].id+'.jpg',
 				
 			});
 			var bubbleView= Ti.UI.createView({
@@ -165,20 +81,77 @@ function show_nice_towns(){
 			
 			point.setLeftView(bubbleView);
 			mapview.addAnnotation(point);
+			townArray.push(point);
 		}
-		showTown=false;
+		isHiddenTown=false;
 	}
 	else{
-		mapview.removeAllAnnotations();
-		showTown=true;
+		mapview.removeAnnotations(townArray);
+		townArray=[];
+		isHiddenTown=true;
 	}
-	//PUEBLOS BONITOS
-	
 }
+
+function paintSimbolData(dataSource){
+	if(isHiddenSimbol){
+		for(var i=0; i<dataSource.length && i<15;i++){
+			
+			var icono;		
+			var position=dataSource[i].posicio;
+			var lon=parseFloat(position.substr(position.indexOf('(')+1,position.indexOf(',')-1));
+			var lat=parseFloat(position.substr(position.indexOf(',')+1,position.indexOf(')')-position.indexOf(',')-1));
+			var codi=parseInt(dataSource[i].codi);
+			
+			if(codi==1){icono='1-clima.png';}
+			else if(codi>1 && codi<=3){icono='2-clima.png';}
+			else if(codi==4 || codi==20 || codi==21){icono='3-clima.png';}
+			else if(codi>4 && codi<=7 || codi>=22 && codi<=26){icono='4-clima.png';}
+			else if(codi>7 && codi<=9 || codi==31 || codi==32){icono='5-clima.png';}
+			else {icono='6-clima.png';console.log('Simbol Codi: '+codi);}
+			
+			var point = Map.createAnnotation({
+					latitude: lat, 
+			    	longitude: lon,		    	
+					image: '/assets/images/my-icons-collection/png/'+icono,
+				});
+			//console.log('lat: '+lat+' lon: '+lon+' title:'+dataSource[i].codi);	
+			mapview.addAnnotation(point);
+			climaArray.push(point);
+		}	
+		isHiddenSimbol=false;
+	}
+	else{
+		mapview.removeAnnotations(climaArray);
+		climaArray=[];
+		isHiddenSimbol=true;
+	}	
+}
+
+
+function getPrediction(day){
+	var xhr = Ti.Network.createHTTPClient();
+	var urlClima='http://static-m.meteo.cat/content/opendata/dadesobertes_pg.json';
+	
+	xhr.onload = function(){
+		Ti.API.info('Data received: '+this.responseText);
+		jsonClimaData=JSON.parse(this.responseText);
+		var matiEstatDelCelData = jsonClimaData[day].versio.mati.simbols.estatDelCel;
+		paintSimbolData(matiEstatDelCelData);
+	};
+	
+	xhr.onerror = function(){
+		alert('Connection error');
+	};
+	
+	xhr.open('GET',urlClima);
+	xhr.send();
+}
+
 
 function onMapComplete() {
 	mapLoaded=true;
 	setDefaultAccuracy();
+//	getPrediction(0);
 
 //	show_nice_towns();
 //	getCurrentPosition();
@@ -222,24 +195,26 @@ win.add(mapview);
 var footer = Ti.UI.createView({
 	height:50,
 	bottom:0,
+	width:180,
 	layout:'horizontal'
 });
 win.add(footer);
 
-getSetPositionButton();
 getShowTownsButton();
+getSetPositionButton();
+getShowClimaButton();
 
 //BOTONES
 function getSetPositionButton(){
 	var button = Ti.UI.createView({
 		backgroundColor:'brown',
 		backgroundImage:'/assets/images/my-icons-collection/png/001-map.png',
+		borderColor: 'brown',
 		width:50,
 		height:50,
+		left: 10,
 		borderRadius:25,
 	});
-	
-		
 	button.addEventListener('click',function(){
 		if(mapLoaded){setMapPosition();}
 	});
@@ -249,16 +224,37 @@ function getSetPositionButton(){
 
 function getShowTownsButton(){
 	var button = Ti.UI.createView({
-		backgroundColor:'black',
-		backgroundImage:'/assets/images/my-icons-collection/png/001-people.png',
+		backgroundColor: 'cyan',
+		backgroundImage:'/assets/images/my-icons-collection/png/008-village-1.png',
+		borderColor: 'white',
 		width:50,
 		height:50,
+		left: 10,
 		borderRadius:25,
 	});
 	
 		
 	button.addEventListener('click',function(){
 		if(mapLoaded){show_nice_towns();}
+	});
+		
+	footer.add(button);	
+}
+
+function getShowClimaButton(){
+	var button = Ti.UI.createView({
+		backgroundColor:'white',
+		backgroundImage:'/assets/images/my-icons-collection/png/003-tornado.png',
+		borderColor: 'green',
+		width:50,
+		height:50,
+		left: 10,
+		borderRadius:25,
+	});
+	
+		
+	button.addEventListener('click',function(){
+		if(mapLoaded){getPrediction(0);}
 	});
 		
 	footer.add(button);	

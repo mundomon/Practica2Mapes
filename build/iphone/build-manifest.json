@@ -3350,6 +3350,66 @@
 			"mtime": "2017-03-12T12:52:40.000Z",
 			"size": 2161
 		},
+		"assets/images/my-icons-collection/png/003-tornado.png": {
+			"hash": "a9f3f0f75e5f0b9e81a963c412732449",
+			"mtime": "2017-03-14T00:08:03.000Z",
+			"size": 3864
+		},
+		"assets/images/my-icons-collection/png/004-people.png": {
+			"hash": "0152d8ea5887db641322689d929e9491",
+			"mtime": "2017-03-14T02:12:07.000Z",
+			"size": 1961
+		},
+		"assets/images/my-icons-collection/png/005-social.png": {
+			"hash": "04208362309647aa8608e9484e030bb3",
+			"mtime": "2017-03-14T00:08:03.000Z",
+			"size": 1170
+		},
+		"assets/images/my-icons-collection/png/008-village-1.png": {
+			"hash": "ab81ed8e64f02edeed66cae93775172d",
+			"mtime": "2017-03-14T00:08:03.000Z",
+			"size": 2604
+		},
+		"assets/images/my-icons-collection/png/1-clima.png": {
+			"hash": "eb6358e5657fec6f1599b895c98c2df3",
+			"mtime": "2017-03-13T19:57:55.000Z",
+			"size": 1182
+		},
+		"assets/images/my-icons-collection/png/1-sea.png": {
+			"hash": "569dd1eb72b03f6e8dd4c04605aab882",
+			"mtime": "2017-03-13T19:57:55.000Z",
+			"size": 1230
+		},
+		"assets/images/my-icons-collection/png/2-clima.png": {
+			"hash": "77588d71b86dde4a7893cae8b1123b91",
+			"mtime": "2017-03-13T19:57:55.000Z",
+			"size": 1688
+		},
+		"assets/images/my-icons-collection/png/2-sea.png": {
+			"hash": "bc420266cbc4b368fa0fe5ae8b39c2fb",
+			"mtime": "2017-03-13T19:57:55.000Z",
+			"size": 1420
+		},
+		"assets/images/my-icons-collection/png/3-clima.png": {
+			"hash": "039f95ec734af2ffb47778bff50b5cd6",
+			"mtime": "2017-03-13T19:57:55.000Z",
+			"size": 910
+		},
+		"assets/images/my-icons-collection/png/4-cllima.png": {
+			"hash": "6f5622cbb60c1372989fb7117e97e31d",
+			"mtime": "2017-03-13T19:57:55.000Z",
+			"size": 1776
+		},
+		"assets/images/my-icons-collection/png/5-clima.png": {
+			"hash": "abd7db479455095d7df0a4ee93b8fb2e",
+			"mtime": "2017-03-13T19:57:55.000Z",
+			"size": 1491
+		},
+		"assets/images/my-icons-collection/png/6-clima.png": {
+			"hash": "667cb425834b6042e00af8c200361a98",
+			"mtime": "2017-03-13T19:57:55.000Z",
+			"size": 1102
+		},
 		"assets/images/my-icons-collection/png/gps.png": {
 			"hash": "b4d07d04546d226ac23a4cf3b6d5b86d",
 			"mtime": "2017-03-13T01:12:45.000Z",

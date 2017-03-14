@@ -1,5 +1,5 @@
 
-3/13/2017, 5:39:25 PM
+3/14/2017, 3:37:55 AM
 
 Operating System
   Name                        = Mac OS X
@@ -21,7 +21,7 @@ Titanium SDK
   Target Platform             = iphone
 
 Command
-  /usr/local/bin/node /Users/dedam/.appcelerator/install/6.1.0/package/node_modules/titanium/lib/titanium.js build run --platform ios --log-level trace --sdk 6.0.1.GA --project-dir /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes --target simulator --ios-version 10.2 --device-family universal --deploy-type development --sim-type iphone --sim-version 10.2 --device-id BAFEFC29-B897-4119-A8A4-93DBECFFF72A --skip-js-minify --no-colors --no-progress-bars --no-prompt --prompt-type socket-bundle --prompt-port 51845 --config-file /var/folders/ny/88xmw3fd2mnc8ph1wbs1s7rw0000gn/T/build-1489423162626.json --no-banner --project-dir /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes
+  /usr/local/bin/node /Users/dedam/.appcelerator/install/6.1.0/package/node_modules/titanium/lib/titanium.js build run --platform ios --log-level trace --sdk 6.0.1.GA --project-dir /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes --target simulator --ios-version 10.2 --device-family universal --deploy-type development --sim-type iphone --sim-version 10.2 --device-id BAFEFC29-B897-4119-A8A4-93DBECFFF72A --skip-js-minify --no-colors --no-progress-bars --no-prompt --prompt-type socket-bundle --prompt-port 51845 --config-file /var/folders/ny/88xmw3fd2mnc8ph1wbs1s7rw0000gn/T/build-1489459072300.json --no-banner --project-dir /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes
 
 [TRACE]  [ioslib] Validating iOS Simulator UDID BAFEFC29-B897-4119-A8A4-93DBECFFF72A
 [TRACE]  [ioslib] Found iOS Simulator UDID BAFEFC29-B897-4119-A8A4-93DBECFFF72A
@@ -73,7 +73,7 @@ Command
 [INFO]   Initializing the build directory
 [TRACE]  offline build file /var/folders/ny/88xmw3fd2mnc8ph1wbs1s7rw0000gn/T/build-4635bc179001d08a6eb679a10250fd4dc7bd541b.json
 [TRACE]  online 1
-[TRACE]  optimizing build, last build was 13709.942 sec ago
+[TRACE]  optimizing build, last build was 49620.435 sec ago
 [INFO]   Creating Xcode project
 [TRACE]  Removing pre-compile phase
 [TRACE]  Adding 1 native module library
@@ -138,6 +138,18 @@ Command
 [TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/06b0217fec5929d2409a5d7ac894bb439b52b9ca.imageset/Contents.json
 [TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/6ed6bfbb5227688d6b12be2447652478628e7cac.imageset/Contents.json
 [TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/0cd21611365a04693ec5e72cd79545815e4b7178.imageset/Contents.json
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/cfe98ebc1c1b77ddfb6a2ea7eec25be691d7df20.imageset/Contents.json
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/9b23ef37fabdfa82c3c268956ed0a58ded3d001f.imageset/Contents.json
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/3b817b543eab5dd2c3d20b7817bfa90151fdf8c0.imageset/Contents.json
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/7b0f88b56eb91857fa0706d7f90d475b9dcdcdbb.imageset/Contents.json
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/7edc8215f42198286f9ff1fb37abb15976ddc5e5.imageset/Contents.json
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/25140619a4baa13d4eb8b9608be39e1ed612cefe.imageset/Contents.json
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/b25f00f234bd200ae018f839e8b4a36213938d8e.imageset/Contents.json
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/2bb92cd6363d49e1f91cfd17296724d8dc8f2cb6.imageset/Contents.json
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/78a3493cc48fcce17a6c8070f9e7405431f1e81b.imageset/Contents.json
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/3ebd5c3d207e28467f728859621af313074c9231.imageset/Contents.json
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/5240e557307b0d5cafb306febbb6fa08d9dfc005.imageset/Contents.json
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/edc56bd79e1267c81dda4dce4dff72faaf7d89de.imageset/Contents.json
 [TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/1b7263c2c49b6f9ba45f7c413948a9800de6101d.imageset/Contents.json
 [TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/5c53d235cbafc9572cb1905d1789216a71ee70d9.imageset/Contents.json
 [TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/78b83d45f66698e64b9388b9966013ac1c23a156.imageset/Contents.json
@@ -176,6 +188,18 @@ Command
 [TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/06b0217fec5929d2409a5d7ac894bb439b52b9ca.imageset/001-people.png
 [TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/6ed6bfbb5227688d6b12be2447652478628e7cac.imageset/002-location.png
 [TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/0cd21611365a04693ec5e72cd79545815e4b7178.imageset/002-paper.png
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/cfe98ebc1c1b77ddfb6a2ea7eec25be691d7df20.imageset/003-tornado.png
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/9b23ef37fabdfa82c3c268956ed0a58ded3d001f.imageset/004-people.png
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/3b817b543eab5dd2c3d20b7817bfa90151fdf8c0.imageset/005-social.png
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/7b0f88b56eb91857fa0706d7f90d475b9dcdcdbb.imageset/008-village-1.png
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/7edc8215f42198286f9ff1fb37abb15976ddc5e5.imageset/1-clima.png
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/25140619a4baa13d4eb8b9608be39e1ed612cefe.imageset/1-sea.png
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/b25f00f234bd200ae018f839e8b4a36213938d8e.imageset/2-clima.png
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/2bb92cd6363d49e1f91cfd17296724d8dc8f2cb6.imageset/2-sea.png
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/78a3493cc48fcce17a6c8070f9e7405431f1e81b.imageset/3-clima.png
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/3ebd5c3d207e28467f728859621af313074c9231.imageset/4-cllima.png
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/5240e557307b0d5cafb306febbb6fa08d9dfc005.imageset/5-clima.png
+[TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/edc56bd79e1267c81dda4dce4dff72faaf7d89de.imageset/6-clima.png
 [TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/1b7263c2c49b6f9ba45f7c413948a9800de6101d.imageset/gps.png
 [TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/5c53d235cbafc9572cb1905d1789216a71ee70d9.imageset/1.jpg
 [TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/Assets.xcassets/78b83d45f66698e64b9388b9966013ac1c23a156.imageset/10.jpg
@@ -206,6 +230,7 @@ Command
 [DEBUG]  Copying CSS files
 [INFO]   Processing JavaScript files
 [DEBUG]  Overwriting /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/Resources/app.js => /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/build/Products/Debug-iphonesimulator/Practica2Mapes.app/app.js
+[DEBUG]  Overwriting /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/Resources/data/dadesjson.js => /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/build/Products/Debug-iphonesimulator/Practica2Mapes.app/data/dadesjson.js
 [DEBUG]  Overwriting /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/Resources/data/nice_town_data.js => /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/build/Products/Debug-iphonesimulator/Practica2Mapes.app/data/nice_town_data.js
 [INFO]   Writing app properties
 [TRACE]  No change, skipping /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes/build/iphone/build/Products/Debug-iphonesimulator/Practica2Mapes.app/_app_props_.json
@@ -222,14 +247,14 @@ Command
 [INFO]   Removing files
 [DEBUG]  Removing empty directories
 [INFO]   Skipping xcodebuild
-[INFO]   Finished building the application in 2s 512ms
+[INFO]   Finished building the application in 2s 621ms
 [INFO]   Launching iOS Simulator
 [TRACE]  [ioslib] Selected iOS Simulator: iPhone 7
 [TRACE]  [ioslib]   UDID    = BAFEFC29-B897-4119-A8A4-93DBECFFF72A
 [TRACE]  [ioslib]   iOS     = 10.2
 [TRACE]  [ioslib] Autoselected Xcode: 8.2.1
 [TRACE]  [ioslib] Checking if simulator /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app/Contents/MacOS/Simulator is already running
-[TRACE]  [ioslib] Simulator is running (pid 51411)
+[TRACE]  [ioslib] Simulator is running (pid 99337)
 [TRACE]  [ioslib] Simulator is booted!
 [TRACE]  [ioslib] iPhone 7 Simulator already running with the correct udid
 [TRACE]  [ioslib] Tailing iPhone 7 Simulator system log: /Users/dedam/Library/Logs/CoreSimulator/BAFEFC29-B897-4119-A8A4-93DBECFFF72A/system.log

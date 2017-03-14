@@ -1,1 +1,8 @@
-Place your change log text here.  This file will be incorporated with your app at package time.
+Consideraciones al profesor:
+
+-Testeado para iPhone 7
+
+-No funciona la currentPosition en el emulador de iOS, comento la linea para setear la nueva posición y añado las coordenadas manualmente.
+
+-Otorgo un símbolo del tiempo a cada rango de códigos, pero dejo comentadas las lineas de la conexión al fichero de los símbolos porque únicamente lo utilizo para saber a que correspondía cada código.
+
