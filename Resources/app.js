@@ -65,9 +65,7 @@ function show_nice_towns(){
 				title: nice_town_data[i].name,
 				latitude: nice_town_data[i].latitude, 
 		    	longitude: nice_town_data[i].longitude,
-				pincolor: Map.ANNOTATION_RED,
-				//image:'/assets/images/nice_towns/'+nice_town_data[i].id+'.jpg',
-				
+				pincolor: Map.ANNOTATION_RED,			
 			});
 			var bubbleView= Ti.UI.createView({
 				width:45,
@@ -107,7 +105,7 @@ function paintSimbolData(dataSource){
 			else if(codi==4 || codi==20 || codi==21){icono='3-clima.png';}
 			else if(codi>4 && codi<=7 || codi>=22 && codi<=26){icono='4-clima.png';}
 			else if(codi>7 && codi<=9 || codi==31 || codi==32){icono='5-clima.png';}
-			else {icono='6-clima.png';console.log('Simbol Codi: '+codi);}
+			else {icono='6-clima.png';}
 			
 			var point = Map.createAnnotation({
 					latitude: lat, 
@@ -151,13 +149,6 @@ function getPrediction(day){
 function onMapComplete() {
 	mapLoaded=true;
 	setDefaultAccuracy();
-//	getPrediction(0);
-
-//	show_nice_towns();
-//	getCurrentPosition();
-//	setDefaultAnnotations();
-//	setDefaultLine();
-//	setDefaultRoute();
 }
 
 
@@ -191,7 +182,9 @@ mapview.addEventListener('complete', function() {
 });
 win.add(mapview);
 
+
 //PIE PAGINA
+
 var footer = Ti.UI.createView({
 	height:50,
 	bottom:0,
@@ -204,7 +197,10 @@ getShowTownsButton();
 getSetPositionButton();
 getShowClimaButton();
 
+
+
 //BOTONES
+
 function getSetPositionButton(){
 	var button = Ti.UI.createView({
 		backgroundColor:'brown',

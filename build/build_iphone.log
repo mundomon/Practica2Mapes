@@ -1,5 +1,5 @@
 
-3/14/2017, 3:37:55 AM
+3/14/2017, 3:53:43 AM
 
 Operating System
   Name                        = Mac OS X
@@ -21,12 +21,12 @@ Titanium SDK
   Target Platform             = iphone
 
 Command
-  /usr/local/bin/node /Users/dedam/.appcelerator/install/6.1.0/package/node_modules/titanium/lib/titanium.js build run --platform ios --log-level trace --sdk 6.0.1.GA --project-dir /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes --target simulator --ios-version 10.2 --device-family universal --deploy-type development --sim-type iphone --sim-version 10.2 --device-id BAFEFC29-B897-4119-A8A4-93DBECFFF72A --skip-js-minify --no-colors --no-progress-bars --no-prompt --prompt-type socket-bundle --prompt-port 51845 --config-file /var/folders/ny/88xmw3fd2mnc8ph1wbs1s7rw0000gn/T/build-1489459072300.json --no-banner --project-dir /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes
+  /usr/local/bin/node /Users/dedam/.appcelerator/install/6.1.0/package/node_modules/titanium/lib/titanium.js build run --platform ios --log-level trace --sdk 6.0.1.GA --project-dir /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes --target simulator --ios-version 10.2 --device-family universal --deploy-type development --sim-type ipad --sim-version 10.2 --device-id 2AA34EBC-3B31-45AA-BDDA-600E061B96CC --skip-js-minify --no-colors --no-progress-bars --no-prompt --prompt-type socket-bundle --prompt-port 51845 --config-file /var/folders/ny/88xmw3fd2mnc8ph1wbs1s7rw0000gn/T/build-1489460020213.json --no-banner --project-dir /Users/dedam/Desktop/AppceleratorMon/Practica2Mapes
 
-[TRACE]  [ioslib] Validating iOS Simulator UDID BAFEFC29-B897-4119-A8A4-93DBECFFF72A
-[TRACE]  [ioslib] Found iOS Simulator UDID BAFEFC29-B897-4119-A8A4-93DBECFFF72A
-[TRACE]  [ioslib] Selected iOS Simulator: iPhone 7
-[TRACE]  [ioslib]   UDID    = BAFEFC29-B897-4119-A8A4-93DBECFFF72A
+[TRACE]  [ioslib] Validating iOS Simulator UDID 2AA34EBC-3B31-45AA-BDDA-600E061B96CC
+[TRACE]  [ioslib] Found iOS Simulator UDID 2AA34EBC-3B31-45AA-BDDA-600E061B96CC
+[TRACE]  [ioslib] Selected iOS Simulator: iPad Air 2
+[TRACE]  [ioslib]   UDID    = 2AA34EBC-3B31-45AA-BDDA-600E061B96CC
 [TRACE]  [ioslib]   iOS     = 10.2
 [TRACE]  [ioslib] Autoselected Xcode: 8.2.1
 [DEBUG]  Detecting modules in /Users/dedam/Library/Application Support/Titanium/modules
@@ -56,9 +56,9 @@ Command
 [INFO]   Deploy type: development
 [INFO]   Building for target: simulator
 [INFO]   Building using iOS SDK: 10.2
-[INFO]   Building for iOS Simulator: iPhone 7
-[DEBUG]  UDID: BAFEFC29-B897-4119-A8A4-93DBECFFF72A
-[DEBUG]  Simulator type: iphone
+[INFO]   Building for iOS Simulator: iPad Air 2
+[DEBUG]  UDID: 2AA34EBC-3B31-45AA-BDDA-600E061B96CC
+[DEBUG]  Simulator type: ipad
 [DEBUG]  Simulator version: 10.2
 [INFO]   Building for device family: universal
 [DEBUG]  Setting Xcode target to Debug
@@ -73,7 +73,7 @@ Command
 [INFO]   Initializing the build directory
 [TRACE]  offline build file /var/folders/ny/88xmw3fd2mnc8ph1wbs1s7rw0000gn/T/build-4635bc179001d08a6eb679a10250fd4dc7bd541b.json
 [TRACE]  online 1
-[TRACE]  optimizing build, last build was 49620.435 sec ago
+[TRACE]  optimizing build, last build was 50567.654 sec ago
 [INFO]   Creating Xcode project
 [TRACE]  Removing pre-compile phase
 [TRACE]  Adding 1 native module library
@@ -247,19 +247,19 @@ Command
 [INFO]   Removing files
 [DEBUG]  Removing empty directories
 [INFO]   Skipping xcodebuild
-[INFO]   Finished building the application in 2s 621ms
+[INFO]   Finished building the application in 2s 619ms
 [INFO]   Launching iOS Simulator
-[TRACE]  [ioslib] Selected iOS Simulator: iPhone 7
-[TRACE]  [ioslib]   UDID    = BAFEFC29-B897-4119-A8A4-93DBECFFF72A
+[TRACE]  [ioslib] Selected iOS Simulator: iPad Air 2
+[TRACE]  [ioslib]   UDID    = 2AA34EBC-3B31-45AA-BDDA-600E061B96CC
 [TRACE]  [ioslib]   iOS     = 10.2
 [TRACE]  [ioslib] Autoselected Xcode: 8.2.1
 [TRACE]  [ioslib] Checking if simulator /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app/Contents/MacOS/Simulator is already running
-[TRACE]  [ioslib] Simulator is running (pid 99337)
+[TRACE]  [ioslib] Simulator is running (pid 10293)
 [TRACE]  [ioslib] Simulator is booted!
-[TRACE]  [ioslib] iPhone 7 Simulator already running with the correct udid
-[TRACE]  [ioslib] Tailing iPhone 7 Simulator system log: /Users/dedam/Library/Logs/CoreSimulator/BAFEFC29-B897-4119-A8A4-93DBECFFF72A/system.log
+[TRACE]  [ioslib] iPad Air 2 Simulator already running with the correct udid
+[TRACE]  [ioslib] Tailing iPad Air 2 Simulator system log: /Users/dedam/Library/Logs/CoreSimulator/2AA34EBC-3B31-45AA-BDDA-600E061B96CC/system.log
 [TRACE]  [ioslib] Running: osascript "/Users/dedam/Library/Application Support/Titanium/mobilesdk/osx/6.0.1.GA/node_modules/ioslib/lib/sim_focus.scpt" "Simulator"
-[TRACE]  [ioslib] iPhone 7 Simulator successfully focused
+[TRACE]  [ioslib] iPad Air 2 Simulator successfully focused
 [TRACE]  [ioslib] Installing the app
 [TRACE]  [ioslib] App launched
 [TRACE]  [ioslib] Trying to connect to log server port 48880...
